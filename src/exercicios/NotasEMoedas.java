@@ -6,7 +6,7 @@ public class NotasEMoedas {
     public static void main(String[] args) {
         // Declaração de variáveis.
         Scanner dinheiro = new Scanner(System.in);
-        double n = dinheiro.nextFloat();
+        double n = dinheiro.nextDouble();
 
         // Resoluçao do exercicio.
         System.out.println("NOTAS:");
@@ -28,6 +28,7 @@ public class NotasEMoedas {
 
         n = n * 100;
         System.out.println((int) (n / 100)+" moeda(s) de R$ 1.00");
+        n = n % 100;
         System.out.println((int) (n / 50)+" moeda(s) de R$ 0.50");
         n = n % 50;
         System.out.println((int) (n / 25)+" moeda(s) de R$ 0.25");
