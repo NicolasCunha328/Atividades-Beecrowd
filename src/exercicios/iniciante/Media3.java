@@ -14,17 +14,23 @@ public class Media3 {
                 n4 = nota.nextDouble();
         double media = ((n1*2) + (n2*3) + (n3*4) + (n4)) / 10;
         // Resolução do exercício
-        System.out.println("Média: " + df.format(media));
+        System.out.println("Media: " + df.format(media));
         if (media >= 7.0){
             System.out.println("Aluno aprovado");
-        } else if (media < 5.0) {
+        } else if (media < 7.0 && media >= 5.0) {
             System.out.println("Aluno em exame");
             double exame = nota.nextDouble();
             System.out.println("Nota do exame: " + df.format(exame));
             media = (media + exame) / 2;
             if (media >= 5){
-
+                System.out.println("Auno aprovado");
+                System.out.println("Media final: " + df.format(media));
+            }else {
+                System.out.println("Aluno reprovado");
+                System.out.println("Media final: " + df.format(media));
             }
+        }else {
+            System.out.println("Aluno reprovado");
         }
 
     }
