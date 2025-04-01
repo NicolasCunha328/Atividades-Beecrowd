@@ -13,13 +13,9 @@ public class Triangulo {
         double area = (a + b) * c / 2;
 
         // Resolução do exercício
-        if (a + b > c){
+        if (a + b > c && a + c > b && b + c > a){ // Forma Triângulo
             System.out.println("Perimetro = " + soma);
-        } else if (a + c > b) {
-            System.out.println("Perimetro = " + soma);
-        } else if (b + c > a) {
-            System.out.println("Perimetro = " + soma);
-        }else {
+        }else { // Não forma Triângulo
             System.out.println("Area = " + area);
         }
     }
