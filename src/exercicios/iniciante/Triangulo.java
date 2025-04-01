@@ -18,8 +18,6 @@ public class Triangulo {
         //tendo a base do trapezio como A e B, e C como a altura
 
         //descobrindo se é ou nao um triangulo
-
-
         // Resolução do exercício
         if (a + b > c && a + c > b && b + c > a){ // Forma Triângulo
             System.out.println("Perimetro = " + soma);
