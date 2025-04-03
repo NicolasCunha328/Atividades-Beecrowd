@@ -8,7 +8,6 @@ public class TempoDeJogo {
         Scanner ler = new Scanner(System.in);
         int hi = ler.nextInt();
         int hf = ler.nextInt();
-        int jogo; //  1 <= jogo <= 24
 
         // Resolução do exercício
         if (hi > hf){
